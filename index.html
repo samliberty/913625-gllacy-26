@@ -11,7 +11,7 @@
     <div>
       <img src="#" alt="Логотип магазина GllacyShop">
     </div>
-    <nav aria-label="Содержимое">
+    <nav aria-label="Навигация по сайту">
       <ul>
         <li><a href="catalog.html">Каталог</a></li>
         <ul>
@@ -26,9 +26,35 @@
       </ul>
     </nav>
     <div>
-      <button type="button" aria-label="Поиск"></button>
-      <button type="button">Вход</button>
-      <button type="button">Пусто</button>
+      <div>
+        <button type="button" aria-label="Поиск"></button>
+        <section>
+          <h3 class="visually-hidden">Поиск</h3>
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="search" class="visually-hidden">Введите текст для поиска</label>
+            <input id="search" type="text" name="search" placeholder="Что ищем?">
+            <button type="submit"></button>
+          </form>
+        </section>
+      </div>
+      <div>
+        <button type="button">Вход</button>
+        <section>
+          <h3 class="visually-hidden">Личный кабинет</h3>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="user-login" class="visually-hidden">Логин</label>
+            <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+            <label for="user-password" class="visually-hidden">Пароль</label>
+            <input id="user-pasword" type="password" name="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            <button type="submit">Войти</button>
+          </form>
+        </section>
+      </div>
+      <div>
+        <button type="button">Пусто</button>
+      </div>
     </div>
     <div aria-label="График работы">
       <p>С 10 до 20, ежедневно</p>
@@ -85,49 +111,20 @@
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </footer>
     <section>
-      <h2 class="visually-hidden">Поиск</h2>
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <label for="site-search" class="visually-hidden">Введите текст для поиска</label>
-        <input id="site-search" type="text" name="search" placeholder="Что ищем?">
-        <button type="submit"></button>
-      </form>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Личный кабинет</h2>
+      <h3>Мы обязательно вам ответим!</h3>
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="user-login" class="visually-hidden">Логин</label>
-          <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label for="user-password" class="visually-hidden">Пароль</label>
-          <input id="user-pasword" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p>
-          <a href="#">Забыли пароль?</a>
-        </p>
-        <p>
-          <a href="#">Новая регистрация</a>
-        </p>
-        <button type="submit">Войти</button>
-      </form>
-    </section>
-    <section>
-      <h3 class="visually-hidden">Обратная связь</h3>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>Мы обязательно вам ответим!</p>
-        <p>
+        <div>
           <label for="user-name" class="visually-hidden">Ваше имя</label>
           <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="user-email" class="visually-hidden">Ваша почта</label>
           <input id="user-email" type="email" name="email" placeholder="Ваша почта для ответа?">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="user-message" class="visually-hidden">Ваше сообщение</label>
           <textarea id="user-message" name="message" placeholder="Напишите что-нибудь?..."></textarea>
-        </p>
+        </div>
         <button type="submit">Отправить</button>
       </form>
       <button type="button">Закрыть</button>
