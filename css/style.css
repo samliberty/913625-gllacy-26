@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+}
+
+.navigation-tastes,
+.search,
+.account,
+.feedback,
+.basket {
+  display: none;
+}
+
+.button {
+  color: #ffffff;
+
+  vertical-align: middle;
+}
+
+.navigation-item {
+  list-style-type: none;
+
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.13;
+}
+
+.navigation-item a:hover,
+.navigation-item a:focus {
+  background-color: #f7f6f3;
+
+  color: #323232;
+}
+
+.navigation-item a:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+}
+
+.additional-navigation-container .button {
+  background-color: rgba(255,255,255,0.3);
+
+  line-height: 1.14;
+}
+
+.additional-navigation-container .button:hover,
+.additional-navigation-container .button:focus {
+  background-color: #f8f7f4;
+
+  color: #323232;
+}
+
+.button-account {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.button-basket {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.work-schedule-time {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.work-schedule-phone {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.advantages {
+  background-color: #efe4cb;
+  background-image: url("../img/advantages-background.png");
+  background-repeat: repeat;
+
+  border-radius: 15px;
+
+  color: #323232;
+}
+
+.advantages-header {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.advantages-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.blog {
+  background-color: #ffffff;
+  background-image: url("../img/blog-image.jpg");
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+
+  color: #323232;
+}
+
+.block-header {
+  text-align: left;
+}
+
+.blog-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: #323232;
+  text-align: left;
+}
+
+.distribution {
+  background-color: #f8f7f4;
+
+  border: 5px solid;
+  border-radius: 10px;
+  border-image-source: url("../img/svg/bg-post.svg");
+  border-image-slice: 5;
+  border-image-repeat: round;
+}
+
+.distribution-text {
+  color: #5a5a5a;
+  text-align: left;
+}
+
+.button-distribution-input {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.social-network-list {
+  list-style-type: none;
+}
+
+.about-us-list {
+  list-style-type: none;
+  font-size: 13px;
+  text-align: left;
+}
+
+.about-us-list a:hover,
+.about-us-list a:focus,
+.about-us-list a:active {
+  color: #ffbc9e;
+}
+
+.about-us-suppliers {
+  font-weight: bold;
+}
+
+.html-academy-container a:hover,
+.html-academy-container a:focus,
+.html-academy-container a:active {
+  color: #ffbc9e;
+}
+
+.html-academy-text {
+  font-size: 12px;
+  text-align: left;
+}
+
+.breadcrumbs-list {
+  list-style-type: none;
+  font-size: 14px;
+  text-align: left;
+}
+
+.breadcrumbs-list a:hover,
+.breadcrumbs-list a:focus,
+.breadcrumbs-list a:active {
+  color: #ffbc9e;
+}
+
+.catalog-header {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.item p {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.item span {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.38;
+}
+
+.item:hover {
+  background-color: rgba(248,247,244,0.2);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.item a:hover,
+.item a:focus,
+.item a:active {
+  color: #ffbc9e;
+}
+
+.breadcrumbs-current-page a {
+  text-decoration: none;
+}
+
+.current-page a{
+  background-color: #d07058;
+}
+
+.current-page a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

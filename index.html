@@ -4,42 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин GllacyShop</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
   <header>
     <div>
-      <img src="#" alt="Логотип магазина GllacyShop">
+      <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина GllacyShop">
     </div>
     <nav aria-label="Навигация по сайту">
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <ul>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
+        <ul class="navigation-tastes">
           <li><a href="#">Новинки</a></li>
           <li><a href="#">Сливочное</a></li>
           <li><a href="#">Щербеты</a></li>
           <li><a href="#">Фруктовый лёд</a></li>
           <li><a href="#">Мелорин</a></li>
         </ul>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+        <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+        <li class="navigation-item"><a href="#">О компании</a></li>
       </ul>
     </nav>
-    <div>
-      <div>
-        <button type="button" aria-label="Поиск"></button>
-        <section>
+    <div class="additional-navigation-container">
+      <div class="search-container">
+        <button class="button button-search" type="button" aria-label="Поиск"></button>
+        <section class="search">
           <h3 class="visually-hidden">Поиск</h3>
           <form action="https://echo.htmlacademy.ru" method="GET">
             <label for="search" class="visually-hidden">Введите текст для поиска</label>
             <input id="search" type="text" name="search" placeholder="Что ищем?">
-            <button type="submit"></button>
+            <button class="button" type="submit"></button>
           </form>
         </section>
       </div>
-      <div>
-        <button type="button">Вход</button>
-        <section>
+      <div class="account-container">
+        <button class="button button-account" type="button">Вход</button>
+        <section class="account">
           <h3 class="visually-hidden">Личный кабинет</h3>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <label for="user-login" class="visually-hidden">Логин</label>
@@ -48,25 +52,26 @@
             <input id="user-pasword" type="password" name="password" placeholder="Пароль">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
-            <button type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
           </form>
         </section>
       </div>
-      <div>
-        <button type="button">Пусто</button>
+      <div class="basket-container">
+        <button class="button button-basket" type="button">Пусто</button>
       </div>
     </div>
-    <div aria-label="График работы">
-      <p>С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+    <div class="work-schedule" aria-label="График работы">
+      <p class="work-schedule-time">С 10 до 20, ежедневно</p>
+      <p class="work-schedule-phone">8 812 450-25-25</p>
     </div>
   </header>
   <main>
     <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
-    <section>
+    <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-      <ul>
+      <p class="advantages-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+        производства на развес</p>
+      <ul class="advantages-list">
         <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
           проверенных временем технологий.</li>
         <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
@@ -77,40 +82,45 @@
           растаять в пути и позволяет сохранить превосходный вкус.</li>
       </ul>
     </section>
-    <article>
+    <article class="blog">
       <h3 class="visually-hidden">Блог</h3>
-      <p>Новое в нашем блоге</p>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      <p class="blog-header">Новое в нашем блоге</p>
+      <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
-    <article>
+    <article class="distribution">
       <h3 class="visually-hidden">Рассылка</h3>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <button type="button">Отправить</button>
+      <p class="distribution-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <form>
+        <label for="distribution-email" class="visually-hidden">Ваша почта</label>
+        <input id="distribution-email" type="text" name="distribution-email" placeholder="Электронная почта">
+        <button class="button button-distribution-input" type="button">Отправить</button>
+      </form>
     </article>
     <footer>
-      <div>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Вконтакте</a></li>
+      <div class="social-network-container">
+        <ul class="social-network-list">
+          <li class="social-network-twitter"><a href="#"><img src="img/svg/twitter.svg" width="32" height="32" alt="Twitter"></a></li>
+          <li class="social-network-instagram"><a href="#"><img src="img/svg/instagram.svg" width="32" height="32" alt="Instagram"></a></li>
+          <li class="social-network-facebook"><a href="#"><img src="img/svg/fb.svg" width="32" height="32" alt="Facebook"></a></li>
+          <li class="social-network-vk"><a href="#"><img src="img/svg/vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
         </ul>
       </div>
-      <div>
-        <ul>
-          <li><a href="#">Для поставщиков</a></li>
+      <div class="about-us-container">
+        <ul class="about-us-list">
+          <li class="about-us-suppliers"><a href="#"><span><img src="img/svg/heart.svg" width="15" height="13" alt="Сердце"></span> Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="#" alt="Логотип HTML Academy">
-      </a>
-      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      <div class="html-academy-container">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
+        <p class="html-academy-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      </div>
     </footer>
-    <section>
+    <section class="feedback">
       <h3>Мы обязательно вам ответим!</h3>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div>
@@ -125,9 +135,9 @@
           <label for="user-message" class="visually-hidden">Ваше сообщение</label>
           <textarea id="user-message" name="message" placeholder="Напишите что-нибудь?..."></textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="button" type="button">Закрыть</button>
     </section>
   </main>
 </body>
