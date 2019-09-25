@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,22 +44,18 @@ a {
 
 .button {
   color: #ffffff;
-
   vertical-align: middle;
 }
 
 .navigation-item {
   list-style-type: none;
-
   font-weight: bold;
-  text-align: left;
   line-height: 1.13;
 }
 
 .navigation-item a:hover,
 .navigation-item a:focus {
   background-color: #f7f6f3;
-
   color: #323232;
 }
 
@@ -49,27 +66,23 @@ a {
 
 .additional-navigation-container .button {
   background-color: rgba(255,255,255,0.3);
-
   line-height: 1.14;
 }
 
 .additional-navigation-container .button:hover,
 .additional-navigation-container .button:focus {
   background-color: #f8f7f4;
-
   color: #323232;
 }
 
 .button-account {
   font-size: 14px;
   font-weight: 500;
-  text-align: right;
 }
 
 .button-basket {
   font-size: 14px;
   font-weight: 500;
-  text-align: left;
 }
 
 .work-schedule-time {
@@ -97,12 +110,10 @@ a {
 .advantages-header {
   font-size: 24px;
   font-weight: 500;
-  text-align: left;
 }
 
 .advantages-list {
   list-style-type: none;
-  text-align: left;
 }
 
 .blog {
@@ -115,15 +126,10 @@ a {
   color: #323232;
 }
 
-.block-header {
-  text-align: left;
-}
-
 .blog-link {
   font-size: 24px;
   font-weight: bold;
   color: #323232;
-  text-align: left;
 }
 
 .distribution {
@@ -138,7 +144,6 @@ a {
 
 .distribution-text {
   color: #5a5a5a;
-  text-align: left;
 }
 
 .button-distribution-input {
@@ -153,7 +158,6 @@ a {
 .about-us-list {
   list-style-type: none;
   font-size: 13px;
-  text-align: left;
 }
 
 .about-us-list a:hover,
@@ -174,13 +178,11 @@ a {
 
 .html-academy-text {
   font-size: 12px;
-  text-align: left;
 }
 
 .breadcrumbs-list {
   list-style-type: none;
   font-size: 14px;
-  text-align: left;
 }
 
 .breadcrumbs-list a:hover,
@@ -192,41 +194,38 @@ a {
 .catalog-header {
   font-size: 35px;
   font-weight: bold;
-  text-align: left;
 }
 
-.item {
+.catalog-list-item {
   list-style-type: none;
 }
 
-.item p {
+.catalog-list-item p {
   font-size: 45px;
   font-weight: bold;
-  text-align: left;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.item span {
+.catalog-list-item span {
   font-size: 30px;
   font-weight: bold;
-  text-align: left;
 }
 
-.item h3 {
+.catalog-list-item h3 {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   line-height: 1.38;
 }
 
-.item:hover {
+.catalog-list-item:hover {
   background-color: rgba(248,247,244,0.2);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.item a:hover,
-.item a:focus,
-.item a:active {
+.catalog-list-item a:hover,
+.catalog-list-item a:focus,
+.catalog-list-item a:active {
   color: #ffbc9e;
 }
 
