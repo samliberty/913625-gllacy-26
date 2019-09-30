@@ -19,6 +19,16 @@
   font-style: normal;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,16 +57,59 @@ a {
   vertical-align: middle;
 }
 
+.navigation-container {
+  width: 1146px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-main {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
 .navigation-item {
   list-style-type: none;
   font-weight: bold;
   line-height: 1.13;
 }
 
+.navigation-item-catalog {
+  width: 87px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navigation-item-delivery {
+  width: 169px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navigation-item-company {
+  width: 118px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .navigation-item a:hover,
 .navigation-item a:focus {
-  background-color: #f7f6f3;
   color: #323232;
+  text-decoration: none;
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+  background-color: #f7f6f3;
 }
 
 .navigation-item a:active {
@@ -64,8 +117,16 @@ a {
   box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
+.additional-navigation-container {
+  width: 246px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  align-items: center;
+}
+
 .additional-navigation-container .button {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   line-height: 1.14;
 }
 
@@ -75,12 +136,18 @@ a {
   color: #323232;
 }
 
+.button-search {
+  width: 33px;
+}
+
 .button-account {
+  width: 93px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .button-basket {
+  width: 100px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -98,25 +165,52 @@ a {
 }
 
 .advantages {
+  width: 1146px;
   background-color: #efe4cb;
   background-image: url("../img/advantages-background.png");
   background-repeat: repeat;
-
   border-radius: 15px;
-
   color: #323232;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .advantages-header {
+  margin-top: 21px;
+  margin-left: 21px;
   font-size: 24px;
   font-weight: 500;
 }
 
 .advantages-list {
+  display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+}
+
+.advantages-list li {
+  width: 531px;
+}
+
+.blog-distribution-container {
+  width: 1146px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .blog {
+  display: flex;
+  flex-direction: column;
+
+  width: 560px;
+  min-height: 220px;
+
   background-color: #ffffff;
   background-image: url("../img/blog-image.jpg");
   background-repeat: no-repeat;
@@ -126,13 +220,26 @@ a {
   color: #323232;
 }
 
+.blog-header {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
 .blog-link {
+  width: 279px;
   font-size: 24px;
   font-weight: bold;
   color: #323232;
+  margin-left: 19px;
 }
 
 .distribution {
+  display: flex;
+  flex-direction: column;
+
+  width: 549px;
+  min-height: 211px;
+
   background-color: #f8f7f4;
 
   border: 5px solid;
@@ -143,7 +250,15 @@ a {
 }
 
 .distribution-text {
+  margin-left: 21px;
+  margin-top: 33px;
+  width: 506px;
   color: #5a5a5a;
+}
+
+.distribution form {
+  margin-top: 38px;
+  margin-left: 21px;
 }
 
 .button-distribution-input {
@@ -151,13 +266,39 @@ a {
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
+.footer-container {
+  width: 1146px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .social-network-list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
   list-style-type: none;
 }
 
+.social-network-instagram,
+.social-network-facebook,
+.social-network-vk {
+  margin-left: 11px;
+}
+
+.about-us-container {
+  display: flex;
+}
+
 .about-us-list {
+  width: 304px;
+  display: flex;
   list-style-type: none;
   font-size: 13px;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
 }
 
 .about-us-list a:hover,
@@ -168,6 +309,18 @@ a {
 
 .about-us-suppliers {
   font-weight: bold;
+  margin-right: 30px;
+  margin-bottom: 9px;
+}
+
+.about-us-document {
+  margin-right: 35px;
+}
+
+.html-academy-container {
+  width: 190px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .html-academy-container a:hover,
@@ -180,9 +333,27 @@ a {
   font-size: 12px;
 }
 
+.breadcrumbs-container {
+  display: flex;
+  flex-direction: column;
+  width: 1146px;
+  margin: 0 auto;
+}
+
 .breadcrumbs-list {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
   font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  width: 220px;
+}
+
+.breadcrumbs-container h1 {
+  margin: 0px;
+  margin-top: 10px;
+  padding: 0px;
 }
 
 .breadcrumbs-list a:hover,
@@ -196,8 +367,23 @@ a {
   font-weight: bold;
 }
 
+.catalog {
+  display: flex;
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.catalog-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .catalog-list-item {
   list-style-type: none;
+  width: 267px;
 }
 
 .catalog-list-item p {
@@ -219,7 +405,7 @@ a {
 }
 
 .catalog-list-item:hover {
-  background-color: rgba(248,247,244,0.2);
+  background-color: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -233,7 +419,7 @@ a {
   text-decoration: none;
 }
 
-.current-page a{
+.current-page a {
   background-color: #d07058;
 }
 
